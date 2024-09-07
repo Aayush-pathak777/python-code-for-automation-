@@ -14,7 +14,6 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 def send_whatsapp_message():
-    import pywhatkit
     phone_number = '+91' + input('Enter your phone number: ')
     message = input('Enter your message: ')
     pywhatkit.sendwhatmsg_instantly(phone_number, message)
